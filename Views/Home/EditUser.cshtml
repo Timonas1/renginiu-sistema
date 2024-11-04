@@ -1,0 +1,12 @@
+@{
+    ViewBag.Title = "Profilio redagavimas";
+}
+
+<h2>Vartotojai</h2>
+
+<form action="@Url.Action("SaveChanges", "Admin")" method="post">
+    <!-- Discount Code Fields Here -->
+
+    <button type="submit" name="message" value="Discount code created successfully">Išsaugoti</button>
+    <button type="button" onclick="window.location.href='@Url.Action("Index", "Home")'">Atgal</button>
+</form>
